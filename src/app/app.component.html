@@ -2,6 +2,11 @@
 <div class="main">
   <div class="mycalc">
     <input #box (keyup.enter)="calcvalue(box.value)"  [(ngModel)]="toshow"  oninput="this.value = this.value.replace(/[^0-9+\-*/.]/g, '').replace(/(\..*)\./g, '$1');" />
+    <br>
+    <div class="text">
+    <textarea name="" id="" cols="30" rows="2" readonly [(ngModel)]="history" placeholder="History:"></textarea>
+    </div>
+    <br>
     <div class="all-btn">
       <div class="all-btn-numbers">
         <button (click)="writetoinput('1')">1</button>

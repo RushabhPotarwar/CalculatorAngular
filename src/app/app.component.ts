@@ -17,6 +17,7 @@ export class AppComponent {
   currvalue=''
   flagb=false;
   ptrflag=false;
+  history=''
 
   writetoinput(value: string){
     
@@ -53,7 +54,9 @@ export class AppComponent {
     if(this.toshow[this.toshow.length-1]=='/' || this.toshow[this.toshow.length-1]=='+' || this.toshow[this.toshow.length-1]=='*' || this.toshow[this.toshow.length-1]=='-'){
       alert("Invalid Input");
     }
+    this.history=this.history+this.currvalue+'='
     this.toshow = eval(this.currvalue)
+    this.history=this.history+this.toshow+'\n'
     this.currvalue = this.toshow
   }
 
