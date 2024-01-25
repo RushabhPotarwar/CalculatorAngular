@@ -1,0 +1,130 @@
+
+  
+
+  
+
+/* main CSS is below */
+
+.main{
+    display: flex;
+    height:1000px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #720455; */
+    margin: 0;
+}
+
+
+.mycalc{
+    /* border: 1px solid darkgray; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    width: 300px;
+    height: 47vh;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.all-btn{
+    display: flex;
+}
+
+.all-btn-numbers{
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+/* Aligning all the signs in a column in right side */
+.all-btn-signs{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.all-btn-numbers button{
+    background-color: rgb(44, 44, 42);
+    color: aliceblue;
+    border: none;
+    margin: 13px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.all-btn-signs button{
+    background-color: rgb(189, 36, 36);
+    color: aliceblue;
+    border: none;
+    margin: 12px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.all-btn-signs button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px rgb(189, 36, 36);
+}
+
+.all-btn-numbers button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px rgb(44, 44, 42);
+}
+
+.btn-extra{
+    display: flex;
+
+}
+
+.btn-clear-equals{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.btn-clear-equals button{
+    width: 120px;
+    font-size: 30px;
+    padding: 5px;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 550;
+}
+
+.clear, .equals{
+    background-color: grey;
+}
+
+.clear:hover, .equals:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px grey;
+}
+
+input{
+    width: 80%;
+    margin: 3px 0px;
+    padding: 13px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: right;
+}
+
