@@ -69,7 +69,12 @@ export class AppComponent {
   }
 
   calcvalue(solve: any){
-    this.toshow = eval(solve) 
+    try{
+    this.toshow = eval(solve);
+    }
+    catch(e){
+      this.toshow='Error';
+    }
   }
 
 
